@@ -55,6 +55,7 @@ screen -ls
 screen -r 9608.pts-0.ubuntu
 screen -r 9608
 ```
+
 ## Refrence
 
 - [使用 Screen 指令操控 UNIX/Linux 終端機的教學與範例](https://blog.gtwang.org/linux/screen-command-examples-to-manage-linux-terminals/)
