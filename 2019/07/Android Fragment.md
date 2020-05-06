@@ -22,6 +22,8 @@ inflate() 的第一個參數放 Fragment 的 Layout 檔，第二個參數放傳�
 
 ### 建議設計單一物件化 (singleton)
 
+單一物件化設計 (singleton)，可避免在切換 Fragment 時，產生重複的物件，造成記憶體浪費。
+
 ``` kotlin
 class MyFragment() : Fragment() {
     companion object {
