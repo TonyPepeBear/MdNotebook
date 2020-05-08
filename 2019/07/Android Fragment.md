@@ -18,7 +18,7 @@ class MyFragment() : Fragment() {
 }
 ```
 
-inflate() 的第一個參數放 Fragment 的 Layout 檔，第二個參數放傳入的 container。
+`inflate()` 的第一個參數放 Fragment 的 Layout 檔，第二個參數放傳入的 container。
 
 ### 建議設計單一物件化 (singleton)
 
@@ -68,9 +68,9 @@ ConstrainLayout 即可當作容器使用
 
 ### 在 Activity 中放入 Fragment
 
-1. 用 getSupportFragmentManager() 取得 Fragment Manger
-2. 用 Fragment Manger 的 beginTransaction() 方法開始 Fragment 的交易
-3. 交易完成後記得 Commit()
+1. 用 `getSupportFragmentManager()` 取得 Fragment Manger
+2. 用 Fragment Manger 的 `beginTransaction()` 方法開始 Fragment 的交易
+3. 交易完成後記得 `Commit()`
 
 ``` kotlin
 class MainActivity : AppCompatActivity() {
