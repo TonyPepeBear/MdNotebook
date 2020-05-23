@@ -4,11 +4,11 @@
 
 ## 安裝 Screen
 
-大多數的 Linux 都已經內建了 `screen` 指令，若沒有安裝，可透過套件管理自行安裝
+大多數的 Linux 都已經內建了 `screen` 指令，若沒有安裝，可透過套件管理自行安裝，下面示範 ubuntu 的安裝。
 
 ``` bash
+sudo apt-get update
 sudo apt-get install screen
-yum install screen
 ```
 
 ## 使用 Screen
