@@ -8,7 +8,7 @@ Rclone 是一個雲端硬碟工具，使用簡單的幾行指令就可以備份�
 
 運行下面的指令
 
-``` bash
+```bash
 curl https://rclone.org/install.sh | sudo bash
 ```
 
@@ -20,7 +20,7 @@ curl https://rclone.org/install.sh | sudo bash
 
 運行下面指令進入設定
 
-``` bash
+```bash
 rclone config
 ```
 
@@ -34,7 +34,7 @@ rclone config
 
 如果目標路徑不存在，會自動創建路徑。
 
-``` bash
+```bash
 rclone copy source:path dest:path [flags]
 ```
 
@@ -48,7 +48,7 @@ rclone copy source:path dest:path [flags]
 
 如果目標路徑不存在，會自動創建路徑。
 
-``` bash
+```bash
 rclone sync source:path dest:path [flags]
 ```
 

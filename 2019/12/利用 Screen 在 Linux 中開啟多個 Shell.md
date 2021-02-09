@@ -6,7 +6,7 @@
 
 大多數的 Linux 都已經內建了 `screen` 指令，若沒有安裝，可透過套件管理自行安裝，下面示範 ubuntu 的安裝。
 
-``` bash
+```bash
 sudo apt-get update
 sudo apt-get install screen
 ```
@@ -15,7 +15,7 @@ sudo apt-get install screen
 
 使用 Screen 時，直接在終端機執行即可。
 
-``` bash
+```bash
 screen
 ```
 
@@ -37,7 +37,7 @@ screen
 
 需要再重新接回時，利用 `-r` 參數就可以快速的接回上一個卸離的 Screen。
 
-``` bash
+```bash
 screen -r
 ```
 
@@ -45,13 +45,13 @@ screen -r
 
 若同時執行的多個 Screen 在背景，可以用 `-ls` 參數，顯示出目前執行中的 Screnn。
 
-``` bash
+```bash
 screen -ls
 ```
 
 要連回指定的 Screen 時，就在 `-r` 參數後加上 Screen 的名字即可，但因為通常名字會很長，所以只需要輸入前幾個字，足以判斷即可。下面的範例兩者都會連回 `9608.pts-0.ubuntu` 這個 Screen。
 
-``` bash
+```bash
 screen -r 9608.pts-0.ubuntu
 screen -r 9608
 ```

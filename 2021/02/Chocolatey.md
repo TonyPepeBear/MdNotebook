@@ -12,11 +12,12 @@ Chocolatey 可以用 `choco install <...>` 的方式安裝軟體，不用到官�
 2. 先執行 `Get-ExecutionPolicy`，如果顯示 `Restricted`，再執行 `Set-ExecutionPolicy AllSigned`。
 3. 複製貼上下方的指令，執行後就完成了
 
-``` powershell
+```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 ```
 
 這樣就大功告成，可以執行 `choco -?` 確定有安裝成功。 
+
 ## 用 Cocolatey 安裝軟體
 
 安裝軟體只需要 `choco install <...>` 就可以。像是如果要安裝 vim，就可以輸入 `choco install vim`。

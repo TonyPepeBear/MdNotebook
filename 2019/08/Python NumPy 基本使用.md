@@ -4,7 +4,7 @@ NumPy 針對陣列運算提供大量的數學函式函式庫，在深度學習�
 
 ## 導入 Numpy
 
-``` Python
+```Python
 import numpy
 ```
 
@@ -12,7 +12,7 @@ import numpy
 
 ### 產生 Numpy 陣列
 
-``` Python
+```Python
 x = np.array([1, 2, 3])
 print(x)  # [1 2 3]
 print(type(x))  # <class 'numpy.ndarray'>
@@ -20,7 +20,7 @@ print(type(x))  # <class 'numpy.ndarray'>
 
 ### NumPy 運算
 
-``` Python
+```Python
 x = np.array([1, 2, 3])
 y = np.array([2, 4, 6])
 
@@ -34,7 +34,7 @@ print(x / y)  # [0.5 0.5 0.5]
 
 ### 建立 N 維陣列
 
-``` Python
+```Python
 x = np.array([[1, 2], [3, 4]])
 
 print(x)
@@ -50,7 +50,7 @@ print(x.dtype)  # int32
 
 ### N 維陣列運算
 
-``` Python
+```Python
 x = np.array([[1, 2], [3, 4]])
 y = np.array([[3, 0], [0, 6]])
 
@@ -69,7 +69,7 @@ print(x * y)
 
 ### 廣播
 
-``` Python
+```Python
 x = np.array([[1, 2], [3, 4]])
 y = np.array([3, 0])
 

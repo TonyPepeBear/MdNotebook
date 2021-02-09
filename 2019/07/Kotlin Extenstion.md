@@ -4,7 +4,7 @@
 
 ### 以往的寫法
 
-``` kotlin
+```kotlin
 class MyActivity: AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         su
@@ -17,7 +17,7 @@ class MyActivity: AppCompatActivity(){
 
 建立一個叫 Extensions.kt 的檔案，並在其中新增下列程式碼，擴充 Activity 類別。
 
-``` kotlin
+```kotlin
 fun Activity.logd(log: String) {
     Log.d(this::class.java.simpleName, log)
 }
@@ -25,7 +25,7 @@ fun Activity.logd(log: String) {
 
 即可在所有 Activity 的子類別中使用 logd 方法，就不用在每個 Activity 中定義 TAG。
 
-``` kotlin
+```kotlin
 class MyActivity: AppCompatActivity(){
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

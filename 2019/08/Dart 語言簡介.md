@@ -6,14 +6,14 @@
 
 用 `var` 宣告一個可變的變數：
 
-``` dart
+```dart
 var name = 'Tony';
 var age = 10;
 ```
 
 不可變動的值有兩種，`final` 的值只能設定一次，`const` 的值是編譯時常數：
 
-``` dart
+```dart
 final name = "Tony";
 const pi = 3.14;
 
@@ -33,14 +33,14 @@ Number 包括兩個類：`int`、`double`
 * int：整數，值的範圍 `-2^53` ~ `2^53`
 * double：浮點數，64位元。
 
-``` dart
+```dart
 var age = 10; //int
 var weight = 51.2; //double
 ```
 
 `int` 和 `double` 都是 `num` 的子類：
 
-``` dart
+```dart
 num weight = 50;
 weight = 51.2;
 ```
@@ -49,20 +49,20 @@ weight = 51.2;
 
 用 `String` 類別儲存字串：
 
-``` dart
+```dart
 var name = "Tont";
 var name1 = "Pepe";
 ```
 
 #### String 可用 + 相連
 
-``` Dart
+```Dart
 var name = "Tont"; + "Pepe";
 ```
 
 在雙引號中引用：
 
-``` dart
+```dart
 var name = "Tont";
 print("Your name is $name")
 ```
@@ -71,7 +71,7 @@ print("Your name is $name")
 
 只能儲存 `true` 或 `false`
 
-``` dart
+```dart
 var sex = true;
 ```
 
@@ -79,6 +79,6 @@ var sex = true;
 
 可存放一系列相同類型的的數據
 
-``` dart
+```dart
 var list = [1, 2, 3];
 ```

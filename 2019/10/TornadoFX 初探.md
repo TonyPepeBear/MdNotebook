@@ -6,7 +6,7 @@ TornadoFX 是專為 Kotlin 開發的 UI Framework
 
 ## 導入 Gradle
 
-``` gradle
+```gradle
 dependencies {
     implementation 'no.tornado:tornadofx:x.y.z'
 }
@@ -20,7 +20,7 @@ TornadoFX 的最基本是個 `App` ，這點蠻類似 Android 的開發
 
 設計一個自己的 `App` 繼承 TornadoFX 的 App ，並在建構子內放入一個自己的 `View` 的 `class`
 
-``` kotlin
+```kotlin
 import tornadofx.*
 
 class MyApp : App(MyView::class)
@@ -30,7 +30,7 @@ class MyApp : App(MyView::class)
 
 設計一個自己的 `View` 並繼承 `View` 類別，然後複寫抽象屬性 `root`
 
-``` kotlin
+```kotlin
 import tornadofx.*
 
 class MyApp : App(MyView::class)
@@ -44,7 +44,7 @@ class MyView : View() {
 
 但是因為 `vBox` 中沒有任何的東西，所以什麼都不會顯示，那就讓我們在其中加入一個 `button` 和一個 `lable`
 
-``` kotlin
+```kotlin
 import tornadofx.*
 
 class MyApp : App(MyView::class)
@@ -69,7 +69,7 @@ class MyView : View() {
 4. left
 5. center
 
-``` kotlin
+```kotlin
 class MyView : View() {
     val topView = find(TopView::class)
     val bottomView : BottomView by inject()
@@ -95,7 +95,7 @@ class BottomView : View() {
 
 在 main 方法中用 launch 方法執行自己的 App
 
-``` kotlin
+```kotlin
 fun main() {
     launch<MyApp>()
 }
@@ -107,7 +107,7 @@ fun main() {
 
 `inject()`方法會 lazily 的分派到屬性中，當屬性第一次被呼叫到時才會產生。`find()`的用法不多，但是 `inject()` 比較常用。
 
-``` kotlin
+```kotlin
 class MyView : View() {
     val topView = find(TopView::class)
     val bottomView : BottomView by inject()
@@ -139,7 +139,7 @@ class BottomView : View() {
 
 下面的範例，創建的一個簡單的輸入方塊 `TextField` ，他的 `value` 綁定在一個 `observable string property` ，然後當 `Button` 被點擊，就將值寫入資料庫，但我們沒寫資料庫，所以就將他 print 出來就好
 
-``` kotlin
+```kotlin
 class MyView : View() {
     val input = SimpleStringProperty()
     val controller = MyController()
@@ -168,7 +168,7 @@ class MyController : Controller() {
 
 下面是一個顯示清單的範例
 
-``` kotlin
+```kotlin
 class MyView : View() {
     val input = SimpleStringProperty()
     val controller = MyController()
@@ -192,7 +192,7 @@ class MyController : Controller() {
 當你呼叫一個 controller 的方法，你必須決定他會立即回傳或是完成耗時工作後更新 UI。TornadoFX提供了一個耗時工作的處理方法 `runAsync`。  
 在 `runAsync` 中的程式碼會在背景執行，當需要更新 UI 時，呼叫 `ui` 區塊。
 
-``` kotlin
+```kotlin
 class MyView : View() {
     val myController = MyController()
 

@@ -4,13 +4,13 @@
 
 ### 繼承 Fragment
 
-``` kotlin
+```kotlin
 class MyFragment : Fragment()
 ```
 
 ### 覆寫 onCreatedView()
 
-``` kotlin
+```kotlin
 class MyFragment() : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return inflater.inflate(R.layout.my_fragment, container, false)
@@ -24,7 +24,7 @@ class MyFragment() : Fragment() {
 
 單一物件化設計 (singleton)，可避免在切換 Fragment 時，產生重複的物件，造成記憶體浪費。
 
-``` kotlin
+```kotlin
 class MyFragment() : Fragment() {
     companion object {
         val instance: MyFragment by lazy { MyFragment }
@@ -37,7 +37,9 @@ class MyFragment() : Fragment() {
 ```
 
 <!--success-->
+
 利用 Kotlin 的 by lazy 語法，可輕鬆設計單一物件 (singleton)
+
 <!--success-->
 
 ## 在 Activity 中使用 Fragment
@@ -46,7 +48,7 @@ class MyFragment() : Fragment() {
 
 ConstrainLayout 即可當作容器使用
 
-``` xml
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 
 <androidx.constraintlayout.widget.ConstraintLayout
@@ -63,7 +65,9 @@ ConstrainLayout 即可當作容器使用
 ```
 
 <!--info-->
+
 若 Layout 中沒有其他 View ，可用最外層的 ConstrainLayout
+
 <!--info-->
 
 ### 在 Activity 中放入 Fragment
@@ -72,7 +76,7 @@ ConstrainLayout 即可當作容器使用
 2. 用 Fragment Manger 的 `beginTransaction()` 方法開始 Fragment 的交易
 3. 交易完成後記得 `Commit()`
 
-``` kotlin
+```kotlin
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         val manager = supportFragmentManager
@@ -84,5 +88,7 @@ class MainActivity : AppCompatActivity() {
 ```
 
 <!--success-->
+
 `transaction.replace() ` 的第一個參數放容器 (Container) ，可用上一步設計 ConstrainLayout 當作容器，第二個參數就是放 Fragment 的實體，因有單一物件設計 (singleton)，故用 instance 取得 Fragment 物件。
+
 <!--success-->

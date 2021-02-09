@@ -2,7 +2,7 @@
 
 ## 導入 Espresso
 
-``` gro
+```gro
 android {
     defaultConfig {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -10,7 +10,7 @@ android {
 }
 ```
 
-``` groovy
+```groovy
 dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.1'
@@ -24,7 +24,7 @@ dependencies {
 
 ## 使用範例
 
-``` kotlin
+```kotlin
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions.*
 import androidx.test.espresso.assertion.ViewAssertions.matches
@@ -50,4 +50,3 @@ class MainActivityTest {
     }
 }
 ```
-

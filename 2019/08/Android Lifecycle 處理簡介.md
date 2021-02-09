@@ -6,7 +6,7 @@ Activity 有自己的命週期，若 Activity 不在畫面上，就沒有必要�
 
 ## 導入 [Android Lifecycle](https://developer.android.com/jetpack/androidx/releases/lifecycle)
 
-``` gradle
+```gradle
 dependencies {
     def lifecycle_version = "2.0.0" //最新版本請參考 Android 官網
     // ViewModel and LiveData
@@ -24,7 +24,7 @@ dependencies {
 
 ![](android-lifecycle-1.png)
 
-``` xml
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -64,7 +64,7 @@ dependencies {
 
 在 ViewModel 中設計兩個 LiveData ，分別為 Email 和密碼的錯誤訊息。再設計 Email 跟密碼的 Setter，並在裡面判斷是否合法，然後設定 Error 訊息。這樣設計的好處，是可以把商業邏輯抽出 Activity，讓 Activity 中的程式碼不會過於雜亂，也更容易讀懂。
 
-``` kotlin
+```kotlin
 class LoginViewModel : ViewModel() {
     private val emailMessageLiveData = MutableLiveData<String>()
     private val passwordMessageLiveData = MutableLiveData<String>()
@@ -95,13 +95,13 @@ class LoginViewModel : ViewModel() {
 
 在 Activity 中使用 ViewModelProviders 可以產生 ViewModel
 
-``` kotlin
+```kotlin
 val loginViewModel = ViewModelProviders.of(this).get(LoginViewModel::class.java)
 ```
 
 設定 EditText 的資料變更傾聽
 
-``` kotlin
+```kotlin
 edText_email.addTextChangedListener(object : TextWatcher {
     override fun afterTextChanged(email: Editable?) {
         loginViewModel.setEmail(email.toString())
@@ -122,7 +122,7 @@ edText_password.addTextChangedListener(object : TextWatcher {
 
 傾聽 ErrorMessage 的資料變更
 
-``` kotlin
+```kotlin
 loginViewModel.getEmailLiveData().observe(this, Observer {
     edText_email.error = it
 })
@@ -133,7 +133,7 @@ loginViewModel.getPasswordLiveData().observe(this , Observer {
 
 ### 完整的 MainActivity 程式碼
 
-``` kotlin
+```kotlin
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -2,14 +2,12 @@
 
 ## 方便記憶表格
 
-| 方法名 | 表自身物件 | 回傳值   |
-| ------ | ---------- | -------- |
-| let    | it         | 最後一行 |
-| run    | this       | 最後一行 |
-| also   | it         | 自身     |
-| apply  | this       | 自身     |
-
-
+| 方法名   | 表自身物件 | 回傳值  |
+| ----- | ----- | ---- |
+| let   | it    | 最後一行 |
+| run   | this  | 最後一行 |
+| also  | it    | 自身   |
+| apply | this  | 自身   |
 
  it, run this, also it, apply this
 
@@ -19,7 +17,7 @@
 
 可很方便判斷 null 的問題
 
-``` kotlin
+```kotlin
 nullable?.let{
     //DO SOMETHING
 }
@@ -29,7 +27,7 @@ nullable?.let{
 
 可方便用於初始化
 
-``` kotlin
+```kotlin
 AlertDialog.Builder().apply{
     title = "title"
     message = "message"
@@ -38,7 +36,7 @@ AlertDialog.Builder().apply{
 }
 ```
 
-``` kotlin
+```kotlin
 button.apply {
     visibility = View.VISIBLE
     text = "message"

@@ -4,7 +4,7 @@
 
 ## 導入 Room
 
-``` grovy
+```grovy
 apply plugin: 'kotlin-kapt'
 
 dependencies {
@@ -27,8 +27,7 @@ dependencies {
 
 需要確保每個使用者的 ID 都不會重複，PrimaryKey 是識別每個資料不同的方法。
 
-
-``` Kotlin
+```Kotlin
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -50,7 +49,7 @@ Dao 為一個介面 (Interface)，設計 UserDao 介面標示為 Dao，在裡面
   * Abort
   * Ignore
 
-``` kotlin
+```kotlin
 import androidx.room.*
 
 @Dao
@@ -75,7 +74,7 @@ interface UserDao{
 * 要儲存的 Entity 類別
 * 檔案版本
 
-``` kotlin
+```kotlin
 import androidx.room.Database
 import androidx.room.RoomDatabase
 
@@ -87,7 +86,7 @@ abstract class UserDatabase : RoomDatabase() {
 
 ### 在 Activity 中使用
 
-``` kotlin
+```kotlin
 val db = Room.databaseBuilder(this, UserDatabase::class.java, "user-db")
             .allowMainThreadQueries() // 允許在主執行續中執行
             .build();

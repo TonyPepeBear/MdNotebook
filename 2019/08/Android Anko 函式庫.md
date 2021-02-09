@@ -4,18 +4,15 @@
 
 Anko 是一個 Kotlin 函式庫，讓開發 Android App 時可以更快速和簡單，可以讓程式碼更清楚明瞭
 
-
-
 ## 導入 Anko
 
-``` gr
+```gr
 buildscript {
     ext.anko_version = '0.10.8'
 }
 ```
 
-
-``` gro
+```gro
 dependencies {
     implementation "org.jetbrains.anko:anko:$anko_version"
 }
@@ -27,13 +24,13 @@ dependencies {
 
 ### 利用 intentFor<>() 的語法
 
-``` kotlin
+```kotlin
 startActivity(intentFor<SomeOtherActivity>()
 ```
 
 ### 若要加入 Extra
 
-``` kotlin
+```kotlin
 startActivity<SomeOtherActivity>(
     "id" to 5,
     "city" to "Denpasar"
@@ -54,7 +51,7 @@ startActivity<SomeOtherActivity>(
 
 ### Toast
 
-``` kotlin
+```kotlin
 toast("Hi there!")
 toast(R.string.message)
 longToast("Wow, such duration")
@@ -62,7 +59,7 @@ longToast("Wow, such duration")
 
 ### Alert
 
-``` kotlin
+```kotlin
 alert("Hi, I'm Roy", "Have you tried turning it off and on again?") {
     yesButton { toast("Oh…") }
     noButton {}
@@ -71,7 +68,7 @@ alert("Hi, I'm Roy", "Have you tried turning it off and on again?") {
 
 ### AsyncTask
 
-``` kotlin
+```kotlin
 doAsync {
     var result = runLongTask()
     uiThread {

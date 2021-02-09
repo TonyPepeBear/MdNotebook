@@ -4,7 +4,7 @@
 
 用 `let` 宣告常數，用 `var` 宣告變數
 
-``` swift
+```swift
 let y = 10
 var x = 10
 var sum = x + y
@@ -14,7 +14,7 @@ var sum = x + y
 
 上方的變數都被自動推斷成整數型態 `Int` ，以下寫法跟上方結果完全相同。
 
-``` swift
+```swift
 let y: Int = 10
 var x: Int = 10
 var sum: Int = x + y
@@ -26,7 +26,7 @@ var sum: Int = x + y
 
 一段文字用雙引號刮起來，並可放入變數中做存取，型態為 `String`
 
-``` swift
+```swift
 var s1 = "This is a string"
 var s2: String = "This is a string"
 ```
@@ -37,7 +37,7 @@ s1 和 s2 的結果是一樣的
 
 用加號連接兩個字串即可相加
 
-``` swift
+```swift
 var h = "Hello"
 var name = "Tony"
 var message = h + ", I am" + name
@@ -47,7 +47,7 @@ var message = h + ", I am" + name
 
 ### 更好的連接方式
 
-``` swift
+```swift
 var h = "Hello"
 var name = "Tony"
 var message = "\(h), I am \(name)"
@@ -61,7 +61,7 @@ message 的結果一樣是 "Hello, I am Tony"
 
 `String` 有內建的方法可以轉換大小寫
 
-``` swift
+```swift
 var name = "Tony"
 name.toLowerCase() // tony
 name.toUpperCase() // TONY
@@ -69,7 +69,7 @@ name.toUpperCase() // TONY
 
 ### 字串大小
 
-``` swift
+```swift
 var name = "Tony"
 var l: Int = name.count // l = 4
 ```
@@ -80,7 +80,7 @@ var l: Int = name.count // l = 4
 
 與其他程式語言類似，用 `if`、`else` 來處理邏輯判斷
 
-``` swift
+```swift
 var time = 0
 
 if time == 0 {
@@ -92,7 +92,7 @@ if time == 0 {
 
 `else if` 用於多重邏輯判斷
 
-``` swift
+```swift
 var grade = 60
 
 if grade > 90 {
@@ -114,7 +114,7 @@ if grade > 90 {
 
 `switch` 一定要有 `default` 才可以執行
 
-``` swift
+```swift
 var season = 3
 
 switch (season) {
@@ -133,7 +133,7 @@ default:
 
 區間判斷
 
-``` swift
+```swift
 switch month {
 case 1...3:
     print("spring")
@@ -147,4 +147,3 @@ default:
     print("not in range")
 }
 ```
-

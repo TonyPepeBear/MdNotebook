@@ -18,7 +18,7 @@
 
 開啟 `settings.json` 後新增下列代碼：
 
-``` json
+```json
 {
     "code-runner.executorMap": {
         "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt.out && $dir$fileNameWithoutExt.out"
@@ -27,4 +27,3 @@
 ```
 
 修改後就用 `out` 當副檔名。
-

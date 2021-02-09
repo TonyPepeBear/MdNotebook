@@ -6,7 +6,7 @@ Kotlin 在非同步處理上有新的方法，協程 `Coroutine`。`Coroutine` �
 
 在 `build.gradle` 中添加依賴項
 
-``` groovy
+```groovy
 dependencies {
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.2'
 }
@@ -14,13 +14,13 @@ dependencies {
 
 若要在 `Android` 中使用需要再添加 `Android` 依賴
 
-``` groovy
+```groovy
 implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.2'
 ```
 
 ## 第一個 Coroutine
 
-``` kotlin
+```kotlin
 import kotlinx.coroutines.*
 
 fun main() {
@@ -35,7 +35,7 @@ fun main() {
 
 上面的程式碼輸出結果：
 
-``` kotlin
+```kotlin
 Hellow, 
 World
 ```
@@ -46,7 +46,7 @@ World
 
 如果只將 `GlobalScope.launch{...}` 替換成 `thread{...}` 你會得到以下錯誤：
 
-``` 
+```
 Error: Kotlin: Suspend functions are only allowed to be called from a coroutine or another suspend function
 ```
 
@@ -56,7 +56,7 @@ Error: Kotlin: Suspend functions are only allowed to be called from a coroutine 
 
 上面的範例中同時使用了非阻塞式的 `delay()` 和阻塞式的 `Thread.sleap()`，這樣很容易讓我們混淆哪個會阻塞線程。下面我們使用 `runblocking{...}` 來阻塞線程
 
-``` kotlin
+```kotlin
 import kotlinx.coroutines.*
 
 fun main() {
@@ -75,7 +75,7 @@ fun main() {
 
 下面用一個更合乎慣用法的方法在寫一次，用 `runblocking{...}` 來包裝 `main` 方法：
 
-``` kotlin
+```kotlin
 import kotlinx.coroutines.*
 
 fun main() = runBlocking<Unit> { // 開始執行主協程
@@ -94,7 +94,7 @@ fun main() = runBlocking<Unit> { // 開始執行主協程
 
 延遲一段時間來確保協程的運行並不是一個好辦法利用 `job.join()` 來確保工作執行結束。
 
-``` kotlin
+```kotlin
 val job: Job = GlobalScope.launch { 
     delay(1000L)
     println("World!")
@@ -107,7 +107,7 @@ job.join()
 
 我們也可以利用 `job.cancel()` 取消協程：
 
-``` kotlin
+```kotlin
 val job: Job = GlobalScope.launch { 
     delay(1000L)
     println("World!")
@@ -121,4 +121,3 @@ job.cancel()
 ## 參考資料
 
 * [Coroutine Basics](https://kotlinlang.org/docs/reference/coroutines/basics.html)
-

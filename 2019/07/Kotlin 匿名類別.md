@@ -4,7 +4,7 @@
 
 ## 一般匿名類別寫法
 
-``` kotlin
+```kotlin
 button.setOnClickListener(object : View.OnClickListener {
     override fun onClick(view: View?) {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
@@ -16,7 +16,7 @@ button.setOnClickListener(object : View.OnClickListener {
 
 ## 在 Kotlin 中，若匿名類別只有一個方法，可簡化成這樣
 
-``` kotlin
+```kotlin
 button.setOnClickListener({ view ->
     TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 })
@@ -24,7 +24,7 @@ button.setOnClickListener({ view ->
 
 ## 若只有一個參數可省略
 
-``` kotlin
+```kotlin
 button.setOnClickListener({
     TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 })
@@ -34,7 +34,7 @@ button.setOnClickListener({
 
 ## 若匿名類別為方法的最後一個參數可移出括號外
 
-``` kotlin
+```kotlin
 button.setOnClickListener() {
     TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 }
@@ -42,9 +42,8 @@ button.setOnClickListener() {
 
 ## 若參數只有匿名類別，可省略括號
 
-``` kotlin
+```kotlin
 button.setOnClickListener{
     TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
 }
 ```
-

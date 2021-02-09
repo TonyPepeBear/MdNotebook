@@ -4,7 +4,7 @@
 
 執行下面指令，安裝 `youtube-dl` 和 `ffmpeg`
 
-``` bash
+```bash
 brew install youtube-dl
 brew install ffmpeg
 ```
@@ -13,13 +13,13 @@ brew install ffmpeg
 
 先進入到要存放下載檔案的資料夾，我這裡是選擇放到影片資料夾中
 
-``` bash
+```bash
 cd Movies/
 ```
 
 輸入下載指令，並將指令中的 `<LINK>` 換成要自己要下載的 youtube 連結
 
-``` bash
+```bash
 youtube-dl <LINK>
 ```
 
@@ -27,7 +27,7 @@ youtube-dl <LINK>
 
 預設下載的檔案可能不是 `mp4` 的格式，可以用 `ffmpeg` 轉換成 `mp4`
 
-``` bash
+```bash
 youtube-dl -f mp4 <LINK>
 ```
 
@@ -35,13 +35,13 @@ youtube-dl -f mp4 <LINK>
 
 預設下載的可能不是最高畫質的影片，先用指令把所有可下載的格式顯示出來
 
-``` bash
+```bash
 youtube-dl -F <LINK>
 ```
 
 這時會顯示出所有可以下載的影片解析度跟音檔，下載時記得影片的編號要在音檔之前，最後將檔案合併並輸出為 `mp4`
 
-``` bash
+```bash
 youtube-dl -f "編號一+編號二" LINK --merge-output-format mp4
 ```
 
@@ -49,7 +49,7 @@ youtube-dl -f "編號一+編號二" LINK --merge-output-format mp4
 
 用 `-x` 參數表示要下載音樂，`--audio-format` 指定要輸出的檔案類型
 
-``` bash
+```bash
 youtube-dl -x --audio-format mp3 <LINK>
 ```
 

@@ -10,7 +10,7 @@
 
 ![android-recycler-2](android-recycler-2.png)
 
-``` xml
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -37,7 +37,7 @@
 
 ### ViewHolder 設計
 
-``` kotlin
+```kotlin
 inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
     val textView = view.findViewById<TextView>(R.id.textview)
 
@@ -49,7 +49,7 @@ inner class MyViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
 ### Adapter 設計
 
-``` kotlin
+```kotlin
 inner class MyAdapter : RecyclerView.Adapter<MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(
@@ -72,7 +72,7 @@ inner class MyAdapter : RecyclerView.Adapter<MyViewHolder>() {
 
 ## RecyclerView 初始化
 
-``` kotlin
+```kotlin
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
 
 ## Item 點擊事件設計
 
-``` kotlin
+```kotlin
 override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
     holder.itemView.setOnClickListener{
         //TODO onClick
@@ -104,7 +104,7 @@ hloder 裡的 itemView 可以取得整個 Item 的 View
 
 將 RecyclerView 的 LayoutManger 設定為 GridLayoutManager 即可有格狀清單的效果。
 
-``` kotlin
+```kotlin
 recycler.layoutManager = GridLayoutManager(this@MainActivity, 3)
 ```
 
@@ -112,7 +112,7 @@ GridLayoutManager( ) 的第二的參數是：每行顯示幾筆資料
 
 ## RecyclerView 動態調整 Item 高度
 
-``` kotlin
+```kotlin
 class MyAdapter : RecyclerView.Adapter<MyViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(
@@ -130,7 +130,7 @@ class MyAdapter : RecyclerView.Adapter<MyViewHolder>() {
 
 ## 在 Fragment 中使用 RecyclerView
 
-``` kotlin
+```kotlin
 class MYFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?) =
         inflater.inflate(R.layout.my_fragment, container, false)
