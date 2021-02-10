@@ -6,7 +6,7 @@ Chocolatey 可以用 `choco install <...>` 的方式安裝軟體，不用到官�
 
 ## 安裝 Chocolatey
 
-安裝 Chocolatey 很簡單，只需要簡單幾步驟
+安裝 Chocolatey 很簡單，只需要簡單幾步驟：
 
 1. 以系統管理員的身分開啟 `powershell`
 2. 先執行 `Get-ExecutionPolicy`，如果顯示 `Restricted`，再執行 `Set-ExecutionPolicy AllSigned`。
