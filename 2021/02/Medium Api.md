@@ -1,6 +1,14 @@
+---
+title: Medium Api
+date: 2021/02/17
+tags: medium, markdown, api, kotlin, tornadofx
+---
+
 # 發布 Markdown 至 Medium
 
 我認為用 Markdown 用來寫技術文章還是最順手的，但是 Medium 的編輯器卻不支援 Markdown。前幾天用 import 的方式也失敗，另尋他處後發現 Medium 支援用 API 發布文章，更還支援用 Markdown 和 Html 發布。雖然不懂官方為何不直接讓用戶用 Markdown 發布，而是要用 API，但是竟然找到了一絲希望，就來試試看用 API 的方式發布文章。
+
+<!-- more -->
 
 本篇使用 Kotlin 和 OKHttp，來嘗試撰寫一個應用程式，來協助發布 Markdwon 至 Medium，專案原始碼在 [Github](https://github.com/TonyPepeBear/MediumMarkdownUploader) 上。
 
