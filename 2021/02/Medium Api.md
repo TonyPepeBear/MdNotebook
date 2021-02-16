@@ -1,7 +1,12 @@
 ---
 title: Medium Api
 date: 2021/02/17
-tags: medium, markdown, api, kotlin, tornadofx
+tags: 
+    - medium
+    - markdown
+    - api
+    - kotlin
+    - tornadofx
 ---
 
 # 發布 Markdown 至 Medium
