@@ -4,7 +4,7 @@
 
 ## Application
 
-Gradle 有個 [Application]([The Application Plugin](https://docs.gradle.org/current/userguide/application_plugin.html)) 的 Plugin，可以快速的產生執行檔，也會自動加入所需依賴，可執行於有安裝 JVM 的 Windows, macOS, Linux。
+Gradle 有個 [Application](https://docs.gradle.org/current/userguide/application_plugin.html) 的 Plugin，可以快速的產生執行檔，也會自動加入所需依賴，可執行於有安裝 JVM 的 Windows, macOS, Linux。
 
 在 `build.gradle` 中加入 Plugin：
 

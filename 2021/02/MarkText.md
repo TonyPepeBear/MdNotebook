@@ -39,7 +39,3 @@ Mark Text 還提供了許多預設的主題可以選，我自己是選了暗色�
 ## Reference
 
 [GitHub - Mark Text](https://github.com/marktext/marktext)
-
-
-
-
