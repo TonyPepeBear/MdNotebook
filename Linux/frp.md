@@ -98,19 +98,10 @@ remote_port = 6000
 
 ## Dashboard GUI
 
-frp 有提供簡易的 GUI 顯示目前的狀態，只要在 Server 設定中加入 dashboard 的的 port, user, pwd 即可：
 
-```ini
-[common]
-dashboard_port = 7500
-dashboard_user = admin
-dashboard_pwd = admin
-```
-
-這樣只要連接到 Server 的 7500 port 就可以看到 Server 的狀態。
 
 ## Refrence
 
-[frp - GitHub](https://github.com/fatedier/frp)
+[GitHub](https://github.com/fatedier/frp)
 
-[frp 中文文檔](https://gofrp.org/docs/)
+[中文文檔](https://gofrp.org/docs/)
