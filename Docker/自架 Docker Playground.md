@@ -1,14 +1,12 @@
 ---
 title: 自架 Docker Playground
 preview: 學過 Docker 的人都應該有用過 Docker Playground 來學習或是測試過軟體，不想在本機跑 Docker 可以先用 Docker Playground 試試看軟體可不可以跑。
-tag:
-  - docker
-  - linux
-  - play-with-docker
 date: 2021/05/25
+tag:
+    - docker
+    - linux
+    - play-with-docker
 ---
-
-# 自架 Docker Playground
 
 學過 Docker 的人都應該有用過 Docker Playground 來學習或是測試過軟體，不想在本機跑 Docker 可以先用 Docker Playground 試試看軟體可不可以跑。
 

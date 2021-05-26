@@ -1,14 +1,12 @@
 ---
 title: Mark Text -- Markdown 編輯器
 preview: 以前我都是用 vscode 寫 Markdown，vscode 也足夠好用，可以直接再畫面旁邊看到預覽，也可以方便的管理 git，但是後來還是覺得要自己一些符號還是比較麻煩，因為會需要中英輸入法一直切換，也會需要自己管理 Markdown 的格式，幾經搜尋之下，在 Github 上發現了一款開源且跨平台的 Markdwon 編輯器，可以所見所得，讓我可以更專注在寫文章上面。另外還有圖床的功能，可以方便的上傳圖片到 Github 上，不用擔心圖片會不見。
-tag:
-  - windows
-  - macOS
-  - mark-text
 date: 2021/05/22
+tag:
+    - windows
+    - macOS
+    - mark-text
 ---
-
-# Mark Text -- Markdown 編輯器
 
 以前我都是用 vscode 寫 Markdown，vscode 也足夠好用，可以直接再畫面旁邊看到預覽，也可以方便的管理 git，但是後來還是覺得要自己一些符號還是比較麻煩，因為會需要中英輸入法一直切換，也會需要自己管理 Markdown 的格式，幾經搜尋之下，在 Github 上發現了一款開源且跨平台的 Markdwon 編輯器，可以所見所得，讓我可以更專注在寫文章上面。另外還有圖床的功能，可以方便的上傳圖片到 Github 上，不用擔心圖片會不見。
 

@@ -1,4 +1,11 @@
-# Dart 語言簡介
+---
+title: Dart 語言簡介
+preview: Dart 語言是由 Google 開發程式語言，語法簡單，類似 javascript，是物件導向語言，最常見用於 flutter 開發跨平台的應用程式。
+tag:
+    - dart
+    - ios
+    - android
+---
 
 `Dart` 語言是由 `Google` 開發程式語言，語法簡單，類似 `javascript` ，是物件導向語言，最常見用於 `flutter` 開發跨平台的應用程式。
 
