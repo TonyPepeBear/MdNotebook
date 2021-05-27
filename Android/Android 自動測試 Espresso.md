@@ -1,4 +1,13 @@
-# Android 自動測試 Espresso
+---
+title: Android 自動測試 Espresso
+preview: 
+date: 2021/05/27
+tag: 
+  - android
+  - espresso
+---
+
+Android 的 UI 自動測試
 
 ## 導入 Espresso
 
@@ -20,7 +29,7 @@ dependencies {
 }
 ```
 
-記得使用最新版本： [Espresso setup instructions
+記得使用最新版本： [Espresso setup instructions](https://developer.android.com/training/testing/espresso/setup)
 
 ## 使用範例
 

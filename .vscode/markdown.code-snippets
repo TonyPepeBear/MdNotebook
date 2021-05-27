@@ -1,0 +1,16 @@
+{
+    "Front matter": {
+		"prefix": "Front Matter",
+		"body": [
+			"---",
+			"title: $1",
+            "preview: $2",
+            "date: $3/$4/$5",
+            "tag: ",
+            "  - $6",
+			"---"
+		],
+		"description": "Insert a front matter",
+        "scope" : "markdown"
+	}
+}
