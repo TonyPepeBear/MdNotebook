@@ -1,4 +1,15 @@
-# Swift 基礎語法
+---
+title: Swift 基礎語法
+preview: Swift 是 Apple 公司開發的程式語言，主要用於撰寫 Apple 自家生態的軟體，如 iOS, macOS。
+date: 2021/05/28
+tag: 
+  - swift
+  - ios
+  - apple
+  - mac
+---
+
+Swift 是 Apple 公司開發的程式語言，主要用於撰寫 Apple 自家生態的軟體，如 iOS, macOS。
 
 ## 常數、變數
 

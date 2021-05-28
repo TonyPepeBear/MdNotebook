@@ -1,4 +1,11 @@
-# Kotlin 匿名類別
+---
+title: Kotlin 匿名類別
+preview: 在 `Android` 開發中會時常使用到匿名類別，`Kotlin` 有簡化編寫匿名類別的語法，到最後甚至只需要一組大括號。
+date: 2021/05/16
+tag: 
+  - Kotlin
+  - Android
+--- 
 
 在 `Android` 開發中會時常使用到匿名類別，`Kotlin` 有簡化編寫匿名類別的語法，到最後甚至只需要一組大括號。
 

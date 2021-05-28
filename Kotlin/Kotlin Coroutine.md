@@ -1,4 +1,12 @@
-# Kotlin Coroutine
+---
+title: Kotlin Coroutine
+preview: Kotlin 在非同步處理上有新的方法，協程 `Coroutine`。`Coroutine` 不會像 `Thread` 會耗費大量的資源，能在原本的`線程`上創建極為輕量的`協程`，且較不會發生記憶體洩漏的情況。 
+date: 2021/05/08
+tag: 
+  - Kotlin
+  - Coroutine
+  - Android
+---
 
 Kotlin 在非同步處理上有新的方法，協程 `Coroutine`。`Coroutine` 不會像 `Thread` 會耗費大量的資源，能在原本的`線程`上創建極為輕量的`協程`，且較不會發生記憶體洩漏的情況。 
 

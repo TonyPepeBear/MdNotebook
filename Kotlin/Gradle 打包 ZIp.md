@@ -1,4 +1,13 @@
-# 在 Gradle 打包 Java、Kotlin 執行檔
+---
+title: 在 Gradle 打包 Java、Kotlin 執行檔
+preview: 打包 Java, Kotin 有許多方法，本篇會介紹一個最簡單的方法，雖然不是最好的方法，但易於各個平台上使用。
+date: 2021/05/01
+tag: 
+  - Java
+  - Kotlin
+  - Gradle
+  - Jvm
+---
 
 打包 Java, Kotin 有許多方法，本篇會介紹一個最簡單的方法，雖然不是最好的方法，但易於各個平台上使用。
 

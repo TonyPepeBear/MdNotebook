@@ -1,8 +1,18 @@
-# Kotlin Extenstion
+---
+title: Kotlin Extenstion Function
+preview: Kotlin 相比 Java 提供了需多的語言特性，我認為其中最重要的一個，就是提供了 Extension Function，能在不繼承類別的情況下，對類別增加新的方法，讓程式有更多的靈活性。
+date: 2021/05/19
+tag: 
+  - Kotlin
+  - Android
+--- 
 
-## 在 Android 中使用 Log
+Kotlin 相比 Java 提供了需多的語言特性，我認為其中最重要的一個，就是提供了 Extension Function，能在不繼承類別的情況下，對類別增加新的方法，讓程式有更多的靈活性。
 
-### 以往的寫法
+
+## 先舉例：在 Android 中使用 Log
+
+以往的寫法
 
 ```kotlin
 class MyActivity: AppCompatActivity(){

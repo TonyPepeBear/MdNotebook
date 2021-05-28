@@ -1,8 +1,15 @@
-# TornadoFX 初探
+---
+title: TornadoFX 初探
+preview: TornadoFX 是專為 Kotlin 開發的 UI Framework。
+date: 2021/05/14
+tag: 
+  - TornadoFX
+  - Kotlin
+  - Desktop
+  - JVM
+---
 
-## 簡介
-
-TornadoFX 是專為 Kotlin 開發的 UI Framework
+TornadoFX 是專為 Kotlin 開發的 UI Framework。
 
 ## 導入 Gradle
 

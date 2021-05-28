@@ -1,4 +1,12 @@
-# Kotlin 中的 apply, let, run, also 方法
+---
+title: Kotlin 中的 apply, let, run, also 方法
+preview: Kotlin 提供許多 Extension Function，本文介紹四個常用和特別的方法。
+date: 2021/05/05
+tag: 
+  - Kotlin
+---
+
+Kotlin 提供許多 Extension Function，本文介紹四個常用和特別的方法。
 
 ## 方便記憶表格
 

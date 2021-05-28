@@ -1,8 +1,11 @@
-## Kotlin 中的新 Random 類別
-
-```kotlin
-kotlin.random.Random
-```
+---
+title: Kotlin 中的新 Random 類別
+preview: Kotlin 的 Random 類別無須先產生物件，類別中的companion object 就提供許多方法來產生隨機的物件，而且比 JAVA 的來的更直觀。
+date: 2021/05/11
+tag: 
+  - Kotlin
+  - Android
+---
 
 Kotlin 的 Random 類別無須先產生物件，類別中的companion object 就提供許多方法來產生隨機的物件，而且比 JAVA 的來的更直觀。
 
