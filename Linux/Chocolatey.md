@@ -1,4 +1,11 @@
-# Chocolatey - Windows 的套件管理器
+---
+title: Chocolatey - Windows 的套件管理器
+preview: 在許多 linux 發行版上都有套件管理，像是 apt。在 Windows 上也有類似的解決方案。
+date: 2021/04/23
+tag: 
+  - chocolatey
+  - windows
+---
 
 在許多 linux 發行版上都有套件管理，像是 apt。在 Windows 上也有類似的解決方案。
 

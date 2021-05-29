@@ -1,4 +1,16 @@
-# 用 youtube-dl 下載 Youtube 影片
+---
+title: youtube-dl 下載 Youtube 影片
+preview: youtube-dl 是 GitHub 最大的開源 Youtube 下載工具。
+date: 2021/04/21
+tag: 
+  - youtube-dl
+  - youtube
+  - windows
+  - mac
+  - linux
+--- 
+
+youtube-dl 是 GitHub 最大的開源 Youtube 下載工具。
 
 ## Mac 安裝 youtube-dl
 

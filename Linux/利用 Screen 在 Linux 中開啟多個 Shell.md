@@ -1,4 +1,12 @@
-# 利用 Screen 在 Linux 中開啟多個 Shell
+---
+title: 利用 Screen 在 Linux 中開啟多個 Shell
+preview: 終端機大多同時只能同時進行一個 Shell，用 Screen 指令就可以，可暫時將執行到一半的 Shell detach，並在需要時再重新 attach ，來達成多個 Shell 的切換，或是背景處理。 
+date: 2021/03/11
+tag: 
+  - screen
+  - linux
+  - shell
+---
 
 終端機大多同時只能同時進行一個 `Shell` ，用 `Screen` 指令就可以，可暫時將執行到一半的 `Shell` 卸離 `detach` ，並在需要時再重新連接 `attach` ，來達成多個 `Shell` 的切換，或是背景處理。
 

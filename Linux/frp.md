@@ -1,4 +1,11 @@
-# frp 內網服務發布到外網
+---
+title: frp 內網服務發布到外網 
+preview: frp 全名是 fast reverse proxy，可以將在 NAT 後方的服務快速的發布到公網 ip 上，可以支援 TCP 和 UDP 協議，我覺得唯一的缺點就是所有流量都會經過 Server 端，所以如果 Server 端的流量有限制就需要注意一下。
+date: 2021/05/04
+tag: 
+  - frp
+  - linux
+---
 
 frp 全名是 fast reverse proxy，可以將在 NAT 後方的服務快速的發布到公網 ip 上，可以支援 TCP 和 UDP 協議，我覺得唯一的缺點就是所有流量都會經過 Server 端，所以如果 Server 端的流量有限制就需要注意一下。
 

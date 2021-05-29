@@ -17,7 +17,7 @@ Gradle 有個 [Application](https://docs.gradle.org/current/userguide/applicatio
 
 在 `build.gradle` 中加入 Plugin：
 
-```groovy
+```gradle
 plugins {
     id 'application'
 }
@@ -25,7 +25,7 @@ plugins {
 
 這樣就完成一半了，剩下的唯一一步驟，就是加入 `Main Class` 的定義：
 
-```groovy
+```gradle
 application {
     mainClassName = 'org.gradle.sample.Main'
 }
