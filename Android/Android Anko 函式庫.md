@@ -3,7 +3,9 @@ title: Android Anko 函式庫
 preview: Anko 是一個 Kotlin 函式庫，讓開發 Android App 時可以更快速和簡單，可以讓程式碼更清楚明瞭 
 date: 2021/05/22
 tag: 
-  - Android Anko 函式庫 
+  - android
+  - anko
+  - kotlin
 ---
 
 Anko 是一個 Kotlin 函式庫，讓開發 Android App 時可以更快速和簡單，可以讓程式碼更清楚明瞭
